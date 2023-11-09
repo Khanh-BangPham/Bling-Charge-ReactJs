@@ -1,0 +1,53 @@
+/* header CSS */
+#header {
+    padding-top: 73px;
+    font-size: var(--fz-text);
+    font-weight: var(--fw-text);
+    line-height: var(--lh-text);
+    width: 100vw;    
+    height: var(--heightHeader);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 202;
+    transition: var(--cubic) var(--t);
+
+}
+#header.bg-zinc-900 {
+    background-color: rgb(24 24 27);
+    transition: var(--cubic) var(--t);;
+    height: calc(var(--heightHeader) - 50px);
+    padding-top: 23px;
+}
+
+#header h1 {
+    display: none;
+}
+
+
+#header .logo {
+    padding-bottom: 10px;
+}
+
+
+#header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#header ul{
+    align-items: center;
+}
+#header ul li a{
+    padding: 10px 17px;
+    transition: var(--cubic) var(--t);;
+}
+
+#header ul li a:hover{
+    color: #8738EB;
+    transition:var(--cubic) var(--t);;
+    padding: 10px 17px;
+}   
+#header .button{
+    margin: 0 50px;
+}

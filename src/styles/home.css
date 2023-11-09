@@ -1,0 +1,252 @@
+.homepage{
+    position: relative;
+    z-index: 10;
+}
+.light-mode{
+    content: "";
+    width: 100vw;
+    height: 200vh;
+    background:     radial-gradient(
+        farthest-side at top left,
+        #FF65B4, 
+        transparent
+      ),
+      radial-gradient(
+        farthest-corner at top right,
+        #D27A49, 
+        transparent 80vw
+      );
+    position: absolute;
+    top: 0;
+    transition: var(--cubic) var(--t);
+    opacity: 0 !important;
+}
+.light-mode.active{
+    opacity: 1 !important;
+    transition: var(--cubic) var(--t);
+}
+
+/*Introduction Component CSS */
+.introduction{
+    padding-top: 84px;
+    min-height: 990px;
+    background-color: linear-gradient(to bottom right, #FF65B4, var(--black-bg-cl))
+}
+.introduction .introduction__textbox{
+    max-width: 600px;
+    margin-top: calc(370px - 84px);
+    margin-left: 120px;
+}
+.introduction .introduction__textbox p{
+    margin: 40px 0;
+}
+.introduction .introduction__image{
+    position: absolute;
+    right: 0;
+    
+}
+.introduction .introduction__image .introduction__image--xiaomi{
+    margin-right: 170px;    
+}
+.introduction .introduction__image::before{
+    content: "";
+    width: calc(100% - 300px);
+    right: 170px;
+    top: -100px;
+    height: 90%;
+    background: linear-gradient(to top, #8738EB, #331A6A);    
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-bottom-left-radius: 300px;
+    border-bottom-right-radius: 300px;
+}
+
+.introduction .introduction__image .introduction__image--ball, 
+.introduction .introduction__image .introduction__image--ball-01{
+    position: absolute;
+}
+.introduction .introduction__image .introduction__image--ball-01{
+    right: 0;
+    top: 160px;
+}
+
+.introduction .introduction__image .introduction__image--ball{
+    left: -66px;
+    top: 577px;
+}
+
+
+
+/* Intruction Component CSS */
+
+.intruction{
+    min-height: 700px;
+    padding: 0 120px;
+}
+.intruction .container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.intruction .intruction__slide{
+    background: #0A0A0A;
+    padding: 3.5%;
+    padding-right: 10%;
+    border-radius: 20px;
+}
+.intruction .intruction__slide .intruction__slide--element{
+
+}
+.intruction .intruction__slide .intruction__slide--element .image-slide{
+    position: relative;
+    cursor: pointer;
+}
+.intruction .intruction__slide .intruction__slide--element .image-slide .three-dots{
+    position: absolute;
+    bottom: 0;
+    right: calc(-75px - 40px);
+
+}
+.intruction .intruction__slide .intruction__slide--element .image-slide .three-dots span{
+    content: "";
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: var(--cubic) var(--t);
+}
+.intruction .intruction__slide .intruction__slide--element .image-slide .three-dots span:hover{
+    background: #8738EB;
+    transition: var(--cubic) var(--t);
+}
+.intruction .intruction__slide .intruction__slide--element .content{
+    padding-left: 40px;
+    padding-top: 42px;
+    color: #979797;
+    line-height: 35px;
+}
+.intruction .intruction__slide .intruction__slide--element .content .title{
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.intruction .intruction__textbox{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.intruction .intruction__textbox p{
+    text-align: center;
+    margin: 24px;
+}
+
+/* GetStarted Componet CSS */
+.getStarted {
+    min-height: 1030px;
+    padding: 0 120px;
+}
+.getStarted .container {
+    position: relative;
+}
+.getStarted .container-fluid{
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.getStarted .getStarted__textbox{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.getStarted .getStarted__textbox p{
+    text-align: center;
+}
+.getStarted .getStarted__block{
+    position: absolute;
+    z-index: 99;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Adapters Component CSS */
+.adapters{
+    min-height: 875px;
+    padding: 0 120px;
+}
+
+.adapters .container{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.adapters .adapters__grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.adapters .adapters__grid .adapters__grid--element{
+    cursor: pointer;
+}
+
+/* Levegare Component CSS */
+.levegare{
+    min-height: 800px;
+    padding: 0 50px;
+}
+
+.levegare .container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* min-height: 100%; */
+}
+
+.levegare .levegare__image{
+    position: absolute;
+    left: -100px;
+    top: -50px;
+    
+}
+.levegare .levegare__image img{
+    max-height: 850px;
+}
+.levegare .levegare__textbox{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.levegare .levegare__textbox ul{
+    padding: 0;
+    align-items: flex-start ;
+    justify-content: center;
+    flex-direction: column;    
+    margin-top: 45px;
+}
+.levegare .levegare__textbox ul li{
+    align-items: center; 
+    margin-top: 15px;
+}
+.levegare .levegare__textbox ul li img{
+    max-width: 123px;
+}
+
+.levegare .levegare__textbox ul li span{
+    padding-left: 50px;
+}
+
+

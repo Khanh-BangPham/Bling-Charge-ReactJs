@@ -1,0 +1,18 @@
+/* Button Component CSS */
+.button {
+    text-align: center;
+    max-width: 200px;
+    min-height: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 14px 32px;
+    transition: all 0.2s;
+    border-radius: 20px;
+    margin-right: 10px;
+    
+}
+
+.button:hover{
+    background: #0a0a0a !important;
+    transition: 0.2s all;
+}

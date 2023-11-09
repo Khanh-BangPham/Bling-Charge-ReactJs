@@ -1,0 +1,30 @@
+:root{
+
+/*global text color*/
+--text-cl: #fff;
+--text-black-cl: #000;
+--gray-cl: #464646;
+/*global bg color*/
+--main-bg-cl: #fff;
+--black-bg-cl: #10033F;
+--bg-button-cl: #8738EB;
+
+--t: 1s;
+--cubic: cubic-bezier(0.84, 0.13, 0.33, 0.97);
+
+/* global font  */
+--fz-text: 18px;
+--lh-text: 24px;
+--fw-text: 500;
+--fz-heading: 40px;
+--fz-text-m: 14px;
+--lh-text-m: 20px;
+--fw-text-m: 400;
+
+--heightHeader: 150px;
+
+--container-max-width: 1900px;
+--container-width: 1200px; 
+
+--device-width: 1440px;
+}
