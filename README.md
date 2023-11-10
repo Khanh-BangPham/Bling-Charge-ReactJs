@@ -6,7 +6,7 @@
    This is a project I carried out to upgrade my coding skills using ReactJs. I prioritized enhancing the user experience through optimization.
 <summary>Installation</summary>
 
-1. Clone the repository using Git Bash ( git clone https://github.com/Khanh-BangPham/A-star-algorithm-for-8-puzzle-problem.git ).
+1. Clone the repository using Git Bash ( `git clone https://github.com/Khanh-BangPham/Bling-Charge-ReactJs.git` ).
     
 2. Running `yarn`.
 
